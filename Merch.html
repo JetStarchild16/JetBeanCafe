@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise - JET Bean Cafe</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-mug-hot"></i> JET Bean Cafe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="merchandise.html">Merch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Anime Merchandise</h1>
+            <p class="text-center mb-5">Browse our curated collection of figures, apparel, and accessories</p>
+
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4">
+                <button class="btn btn-primary filter-btn active" data-category="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-category="figures">Figures</button>
+                <button class="btn btn-outline-primary filter-btn" data-category="posters">Posters</button>
+                <button class="btn btn-outline-primary filter-btn" data-category="apparel">Apparel</button>
+                <button class="btn btn-outline-primary filter-btn" data-category="accessories">Accessories</button>
+            </div>
+
+            <!-- Merchandise Grid -->
+            <div class="row g-4" id="merch-grid">
+                <div class="col-md-3 merch-item" data-category="figures">
+                    <div class="card">
+                        <img src="images/merch-figure1.jpg" class="card-img-top" alt="Demon Slayer Figure">
+                        <div class="card-body">
+                            <span class="category-tag">Figures</span>
+                            <h5 class="card-title mt-2">Demon Slayer - Tanjiro Figurine</h5>
+                            <p class="price">£34.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="posters">
+                    <div class="card">
+                        <img src="images/merch-poster1.jpg" class="card-img-top" alt="Naruto Wall Scroll">
+                        <div class="card-body">
+                            <span class="category-tag">Posters</span>
+                            <h5 class="card-title mt-2">Naruto - Team 7 Wall Scroll</h5>
+                            <p class="price">£24.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="apparel">
+                    <div class="card">
+                        <img src="images/merch-hoodie1.jpg" class="card-img-top" alt="AOT Hoodie">
+                        <div class="card-body">
+                            <span class="category-tag">Apparel</span>
+                            <h5 class="card-title mt-2">Attack on Titan Hoodie</h5>
+                            <p class="price">£39.99</p>
+                            <span class="badge bg-warning">Few Left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="accessories">
+                    <div class="card">
+                        <img src="images/merch-keychain1.jpg" class="card-img-top" alt="Ghibli Keychain">
+                        <div class="card-body">
+                            <span class="category-tag">Accessories</span>
+                            <h5 class="card-title mt-2">Studio Ghibli Keychain Set</h5>
+                            <p class="price">£12.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="posters">
+                    <div class="card">
+                        <img src="images/merch-poster2.jpg" class="card-img-top" alt="JJK Poster">
+                        <div class="card-body">
+                            <span class="category-tag">Posters</span>
+                            <h5 class="card-title mt-2">Jujutsu Kaisen Poster Set</h5>
+                            <p class="price">£19.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="apparel">
+                    <div class="card">
+                        <img src="images/merch-backpack1.jpg" class="card-img-top" alt="MHA Backpack">
+                        <div class="card-body">
+                            <span class="category-tag">Apparel</span>
+                            <h5 class="card-title mt-2">My Hero Academia Backpack</h5>
+                            <p class="price">£44.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="figures">
+                    <div class="card">
+                        <img src="images/merch-plush1.jpg" class="card-img-top" alt="Pikachu Plush">
+                        <div class="card-body">
+                            <span class="category-tag">Figures</span>
+                            <h5 class="card-title mt-2">Pokémon Plush - Pikachu</h5>
+                            <p class="price">£22.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 merch-item" data-category="accessories">
+                    <div class="card">
+                        <img src="images/merch-mug1.jpg" class="card-img-top" alt="One Piece Mug">
+                        <div class="card-body">
+                            <span class="category-tag">Accessories</span>
+                            <h5 class="card-title mt-2">One Piece Mug Collection</h5>
+                            <p class="price">£15.99</p>
+                            <span class="badge bg-success">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-mug-hot"></i> JET Bean Cafe</h5>
+                    <p>Sip Coffee. Collect Anime.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="merchandise.html">Merchandise</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Visit Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 42 Otaku Lane, London</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8am-8pm<br>Sat-Sun: 9am-7pm</p>
+                </div>
+            </div>
+            <p class="text-center">&copy; 2026 JET Bean Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
