@@ -283,3 +283,33 @@ footer .text-center {
         font-size: 0.9rem;
     }
 }
+/* Navbar Brand - Logo + Text */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Remove old coffee icon styling if present */
+.navbar-brand i {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand img {
+        height: 30px;
+    }
+}
