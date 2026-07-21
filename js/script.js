@@ -20,11 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
             
-            // Update active button
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             
-            // Filter items
             merchItems.forEach(item => {
                 if (category === 'all' || item.getAttribute('data-category') === category) {
                     item.style.display = 'block';
@@ -36,9 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Contact form validation
+// Contact form validation with success message
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
+    const successDiv = document.getElementById('formSuccess');
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -58,9 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Success message
-            alert('Thank you for your message! A member of our team will get back to you soon. Otaku out! ✨');
+            // Show success message
+            successDiv.classList.remove('d-none');
             this.reset();
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                successDiv.classList.add('d-none');
+            }, 5000);
         });
     }
 });
